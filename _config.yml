@@ -7,12 +7,7 @@ description: > # description of the site (multiple lines allowed)
 
 permalink: /:slug
 
-twitter:
-  username: abhinav # update or delete this
-  card: summary_large_image
-
-#theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
-remote_theme: abhinavs/moonwalk
+# The Moonwalk layouts, includes, and styles are stored directly in this repository.
 
 theme_config:
   appearance: "dark" # can be "light", "dark" or "auto"
@@ -43,9 +38,6 @@ theme_config:
     title_blog: Blog
     title_old_projects: Old Projects
 
-soopr:
-  publish_token: "" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
-
 highlighter: rouge
 
 sass:
@@ -54,9 +46,7 @@ sass:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-soopr-seo-tag
-  - jekyll-markdown-output
-  - jekyll-llms-output
+  - jekyll-seo-tag
 
 # Keep the theme's sample posts in the repository without publishing them.
 defaults:
@@ -68,17 +58,3 @@ defaults:
 
 exclude:
   - blog.html
-
-# Emit a clean .md sibling for each post (e.g. /foo -> /foo.md) so AI agents
-# can fetch source Markdown instead of parsing HTML. Set enabled: false to disable.
-markdown_output:
-  collections: [posts]
-
-# Emit /llms.txt (curated index) and /llms-full.txt (full content) so agents
-# can discover and ingest the site. See https://llmstxt.org for the spec.
-llms_output:
-  index:
-    collections: [posts]
-  full:
-    collections: [posts]
-    respect_markdown_output: true
