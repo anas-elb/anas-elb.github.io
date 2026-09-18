@@ -1,9 +1,9 @@
-title: Description
+title: Anas El Boukari
 author: Anas EL BOUKARI
 url: https://anas-elb.github.io # root address of the site
 baseurl: "" # set to "/moonwalk" if hosting under a project subpath
 description: > # description of the site (multiple lines allowed)
-  Anas EL BOUKARI is a student in Data Science (M1).
+  M1 Data Science student at Centrale Lille, the University of Lille, and IMT Nord Europe.
 
 permalink: /:slug
 
@@ -24,8 +24,8 @@ theme_config:
   show_copyright: true # show copyright notice in footer
   # following keys are using to create home layout
   show_projects: true # show projects as cards, add in _data/home.yml
-  show_blog: true # show blog posts added in _posts
-  show_old_projects: true # show old projects as cards, add in _data/home.yml
+  show_blog: false # no blog is published yet
+  show_old_projects: false # hide inherited template projects
   show_misc_list: false # show generic vertical list for misc details, add _data/home.yml
   show_reading_time: true # show number of words and reading time in the blog posts
   show_tags: true # show tags in a blog posts
@@ -57,6 +57,17 @@ plugins:
   - jekyll-soopr-seo-tag
   - jekyll-markdown-output
   - jekyll-llms-output
+
+# Keep the theme's sample posts in the repository without publishing them.
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      published: false
+
+exclude:
+  - blog.html
 
 # Emit a clean .md sibling for each post (e.g. /foo -> /foo.md) so AI agents
 # can fetch source Markdown instead of parsing HTML. Set enabled: false to disable.

@@ -1,12 +1,9 @@
 navbar_entries:
   - title: about
-    url: about
+    url: /about/
 
-  - title: blog
-    url: blog
-
-  - title: website
-    url: https://www.abhinav.co
+  - title: GitHub
+    url: https://github.com/anas-elb
 
 project_entries:
   - title: Optimasol
@@ -38,20 +35,11 @@ old_project_entries:
     desc: The better people know you, the better they collaborate
 
 footer_entries:
-  - title: abhinav's homepage
-    url: https://www.abhinav.co
+  - title: GitHub
+    url: https://github.com/anas-elb
 
-  - title: twitter
-    url: https://twitter.com/abhinav
-
-  - title: github
-    url: https://github.com/abhinavs
-
-  - title: feed
-    url: feed.xml
-
-  - title: llms.txt
-    url: llms.txt
+  - title: business card
+    url: https://github.com/anas-elb/Business-Card/releases/latest/download/card.pdf
 
 misc_entries:
   - title: this is an example vertical list
@@ -84,5 +72,4 @@ misc_entries:
 
           - title: it is easy to use, see _data/home.yml to see how to configure it.
             url: false
-
 
